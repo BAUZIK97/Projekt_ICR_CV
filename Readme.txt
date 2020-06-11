@@ -9,4 +9,6 @@ oraz biblioteki tensorflow
 
 # camera_det.py Wymaga podania w konsoli liczby przypisanej do modelu z którego będzie korzystał klasyfikator
 
-# skrypt o nazwie main.py służył do ręcznego sprawdzania czy obrazy są przypisywane do konkretnych klas asd
+# skrypt o nazwie main.py służył do ręcznego sprawdzania czy obrazy są przypisywane do konkretnych klas 
+
+# oczy.py służył do sprawdzania czy klasfikator działa
