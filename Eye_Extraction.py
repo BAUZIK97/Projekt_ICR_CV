@@ -42,7 +42,6 @@ def haar_extract_eyes(images):
                 eyecount += 1
                 if eyecount == 1:
                     eye1 = CEye(img.roi_gray[ey:ey + eh, ex:ex + ew], img.cclass, ex)
-                    print(eye1.cgray.shape)
                 if eyecount == 2:
                     eye2 = CEye(img.roi_gray[ey:ey + eh, ex:ex + ew], img.cclass, ex)
                     if eye1.x > eye2.x:
@@ -70,7 +69,7 @@ def savedata(eyes):
 
         path = 'Output_haar/' + str(img.cwhich) + '/' + str(train_val_test) + img.cclass + '/'
         if not os.path.isdir(path):
-            path1 = Path([path])
+            path1 = Path(path)
             path1.mkdir(parents=True)
         # Zapisanie uzyskanego obrazu oka w podanym folderze
         cv2.imwrite(path + '/' + str(count) + '.jpg', img.cgray)
