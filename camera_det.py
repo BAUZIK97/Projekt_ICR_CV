@@ -112,5 +112,5 @@ while 1:
 
 
 cap.release()
-out.release()
+# out.release()
 cv2.destroyAllWindows()
